@@ -1,0 +1,157 @@
+:root {
+		font-size: 14px;
+}
+* {
+		font-weight: normal;
+		padding: 0;
+		margin: 0;
+		font-family: Acme;
+		box-sizing: border-box;
+		border: none;
+}
+.full-game {
+		min-height: 100vh;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+}
+.opponent-side {
+		background-color: pink;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+}
+.opponent-side .options .cpuGameNo {
+		display: inline-block;
+		padding: 0em 1em;
+		margin: 0px .5rem;
+		color: white;
+		background-color: #123456;
+}
+.opponent-side .answer {
+		align-self: center;
+}
+.divide-side {
+		background-color: #aaa;
+}
+.opponent-side, .my-side {
+		position: relative;
+		flex-grow: 1;
+}
+.my-side {
+		background-color: lightskyblue;
+}
+.my-side .score, .opponent-side .score{
+		width: max-content;
+		font-size: 1rem;
+		padding: .5em 1em;
+		background-color: #beef8b;
+}
+.my-side .score p span, .opponent-side .score p span {
+		display: inline-block;
+		padding: 0em 1em;
+}
+.my-side .avatar, .opponent-side .avatar {
+		width: 55px;
+		height: 55px;
+		background-color: green;
+}
+.my-side .options, .opponent-side .options {
+		padding: .5em;
+		width: max-content;
+		background-color: orange;
+}
+.my-side .answer, .opponent-side .answer {
+		font-size: 3rem;
+		text-align: center;
+}
+.my-side .you-won, .opponent-side .cpu-won {
+		position: absolute;
+		width: max-content;
+		margin: auto;
+		color: white;
+		padding: 5px;
+		background-color: #5900cc;
+		font-size: 1.5rem;
+		display: none;
+}
+.opponent-side .cpu-won {
+		left: 37%;
+		top: 35%;
+}
+.my-side .you-won {
+		left: 36%;
+		top: 20%;
+}
+.my-side .answer p span {
+		display: inline-block;
+		text-align: center;
+}
+.my-side .control {
+		position: relative;
+		top: 30px;
+		margin: auto;
+		text-align: center;
+		background-color: #eee;
+		width: max-content;
+		display: grid;
+		grid-gap: 5px;
+		grid-template-rows: 1fr 1.5fr 1.5fr 1fr;
+		grid-template-columns: 1fr 3fr 1fr;
+		grid-template-areas: "top top top"
+		       										"left mid right"
+		       										"left mid right"
+		       										"down down down";
+}
+.my-side .control span {
+		flex-grow: 1;
+		padding: 3px 8px;
+}
+.my-side .control .top {
+		grid-area: top;
+		background-color: orange;
+		display: flex;
+}
+.my-side .control .right {
+		grid-area: right;
+		background-color: orange;
+		display: flex;
+		flex-direction: column;
+}
+.my-side .control .mid {
+		grid-area: mid;
+		background-color: #123456;
+		color: white;
+}
+.my-side .control .down {
+		grid-area: down;
+		background-color: orange;
+		display: flex;
+}
+.my-side .control .left {
+		grid-area: left;
+		background-color: orange;
+		display: flex;
+		flex-direction: column;
+}
+.my-side .control .mid {
+		font-size: 3rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+}
+.my-side .control .mid div {
+		
+}
+/* ********************************************************************************************* */
+
+
+.full-game .divide-side{
+		padding: 2.5px;
+		background-color: white;
+}
+
+
+
+
